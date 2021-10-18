@@ -7,6 +7,17 @@ const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || 5000;
 
+mongoose.connect('mongodb+srv://anime:anime@cluster0.fxnst.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+    useUnifiedTopology:true,
+    useNewUrlParser:true,
+    useFindAndModify:false
+},function (err){
+    if(err){
+        console.log(err)
+    }else{
+        console.log('MongoDB CONECTADO com sucesso!')
+    }
+})
 
 app.use(cors());
 
