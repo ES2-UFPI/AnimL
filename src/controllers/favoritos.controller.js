@@ -18,6 +18,13 @@ module.exports = {
             return res.status(500).json(anime);
         }
 
+    },
+    async delete(req, res){
+        const { _id } = req.params.Favoritos
+
+        const anime = await Favoritos.findByIdAndDeletei({ _id });
+
+        return res.json(anime);
     }
 }
 
