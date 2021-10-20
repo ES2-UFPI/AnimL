@@ -17,7 +17,6 @@ module.exports = {
         }else{
             return res.status(500).json(anime);
         }
-
     },
     async delete(req, res){
         const { _id } = req.params.Favoritos
