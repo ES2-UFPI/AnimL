@@ -6,7 +6,7 @@
    
 }
 .search input {
-    background-color: azure;
+    background-color: rgb(239, 255, 255);
     border: 0;
     border-radius: 2px;
     border-top-right-radius: 0px;
@@ -19,7 +19,7 @@
 .searchIcon{
     height: 60px;
     width: 50px;
-    background-color: azure;
+    background-color: rgb(239, 255, 255);
     display: grid;
     place-items: center;
 }
@@ -36,14 +36,14 @@ input:focus{
     margin: auto;
     width: 250px;
     height: 100px;
-    background-color: azure;
+    background-color: rgb(236, 253, 253);
     box-shadow: rgba(0, 0, 0, 0.35)0px 5px 15px;
-    overflow: hidden;
+    overflow:hidden;
     overflow-y: auto;
 }
 
 .dataResult::-webkit-scrollbar{
-    display: none;
+    /*display: none;*/
 }
 
 .dataResult .dataItem{
@@ -51,7 +51,7 @@ input:focus{
     height: 50px;
     display: flex;
     align-items:initial;
-    color: black;
+    color: rgb(2, 2, 2);
 }
 .dataItem p {
     margin-left: 10px;
@@ -61,7 +61,7 @@ a{
 }
 
 a:hover{
-    background-color: lightgray;
+    background-color: rgb(211, 204, 204);
 }
 
 #clearBtn {

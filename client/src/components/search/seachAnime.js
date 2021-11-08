@@ -17,27 +17,31 @@ function SeachAnime() {
       }
     }, [text]);
     
+   
+
+
     return (
       <div className="Search">
           <SearchTitle value={text} onChange={(search) => setText(search)} placeholder="Pesquisar Anime" />
           
-          <div className='dataResult'>
             {info.data && (
-            <ul className="animes-list">
-            {info.data.map((item)=>(
-              <li key={item.id}>
-                <a className='dataItem' href=''>
-                  <p>{item.attributes.canonicalTitle}</p>
-                </a>
-              </li>
-            ))}
-            </ul>
+            <div className='dataResult'>
+              <ul className="animes-list">
+              {info.data.map((item)=>(
+                <li key={item.id}>
+                  <a className='dataItem' href=''>
+                    <p>{item.attributes.canonicalTitle}</p>
+                  </a>
+                </li>
+              ))}
+              </ul>
+            </div>
             )}
-          </div>
+          
         
       </div>
-    );
-  }
+    )
+}
   
   export default SeachAnime;
 
