@@ -1,5 +1,7 @@
 const Favoritos = require('../models/favoritos.model')
 
+const authMiddleware = require('../middleware/auth');
+
 module.exports = {
     async index(req, res) {
         const lista_favoritos = await Favoritos.find();
