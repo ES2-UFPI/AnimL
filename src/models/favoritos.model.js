@@ -5,7 +5,12 @@ const DataSchema = new mongoose.Schema({
     poster: String,
     id_original: String,
     start: Date,
-    end: Date
+    end: Date,
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Usuarios',
+        require: true,
+    },
 },{
     timestamps:true
 }); 

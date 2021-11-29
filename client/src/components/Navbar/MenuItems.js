@@ -14,7 +14,7 @@ export const MenuItems = [
     },
     {
         title: 'Perfil',
-        url: '#',
+        url: 'http://localhost:3000/login',
         cName: 'nav-links'
 
     },
@@ -26,7 +26,7 @@ export const MenuItems = [
     },
     {
         title: 'Sign up',
-        url: '#',
+        url: 'http://localhost:3000/cadastro',
         cName: 'nav-links-mobile'
 
     }
